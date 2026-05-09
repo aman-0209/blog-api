@@ -11,6 +11,9 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/posts/:postId/comments", commentRoutes);
+app.get("/", (req, res) => {
+  res.json({ message: "Blog API is running!" });
+});
 // app.get("/api/profile", protect, (req, res) => {
 //   res.status(200).json({
 //     success: true,
