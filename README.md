@@ -2,6 +2,10 @@
 
 A REST API built with Node.js, Express, PostgreSQL and Prisma.
 
+## Live API
+
+https://blog-api-9h4i.onrender.com
+
 ## Features
 
 - JWT Authentication (register & login)
@@ -9,12 +13,14 @@ A REST API built with Node.js, Express, PostgreSQL and Prisma.
 - Comments
 - Authorization (only edit/delete your own content)
 - Pagination
+- Zod Input Validation
 
 ## Tech Stack
 
 - Node.js & Express
 - PostgreSQL & Prisma ORM
 - JWT & bcrypt
+- Zod
 - dotenv
 
 ## Getting Started
