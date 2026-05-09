@@ -45,11 +45,7 @@ const getPostById = async (req, res) => {
 const createPost = async (req, res) => {
   try {
     const { title, content } = req.body;
-    if (!title || !content) {
-      return res
-        .status(400)
-        .json({ success: false, message: "Title and content are required" });
-    }
+
     const post = await postService.createPost({
       title,
       content,
@@ -61,7 +57,7 @@ const createPost = async (req, res) => {
   }
 };
 
-// PATCH /api/posts/:id
+// PATCH /api/posts/:id -- check
 
 const updatePost = async (req, res) => {
   try {

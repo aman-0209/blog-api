@@ -3,7 +3,7 @@ require("dotenv").config();
 const authRoutes = require("./routes/auth.routes");
 const postRoutes = require("./routes/post.routes");
 const commentRoutes = require("./routes/comment.route");
-const protect = require("./middleware/auth.middleware");
+const protect = require("./middlewares/auth.middleware");
 const app = express();
 const PORT = process.env.PORT || 8000;
 

@@ -26,11 +26,7 @@ const getAllComments = async (req, res) => {
 const createComment = async (req, res) => {
   try {
     const { content } = req.body;
-    if (!content) {
-      return res
-        .status(400)
-        .json({ success: false, message: "Content is required" });
-    }
+
     const post = await postService.getPostById(req.params.postId);
     if (!post) {
       return res.status(404).json({ error: "Post not found" });
