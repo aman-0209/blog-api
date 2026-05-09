@@ -27,7 +27,7 @@ A REST API built with Node.js, Express, PostgreSQL and Prisma.
 ### Installation
 
 1. Clone the repo
-   git clone https://github.com/YOURUSERNAME/blog-api.git
+   git clone https://github.com/aman-0209/blog-api.git
 
 2. Install dependencies
    npm install
